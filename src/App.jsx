@@ -1,4 +1,14 @@
+import {Counter} from "./components/Counter";
+import { RepositoryList } from "./components/RepositoryList";
 import "./styles/global.scss";
-export function App(){
-      return <h1>Hello World - App React</h1>
+
+//modelo de um component - Função que começa com a primeira letra Maiúscula
+//e a função devolve um html.
+export function App() {
+  return (
+    <>
+      <RepositoryList />
+      <Counter />
+    </>
+  );
 }
